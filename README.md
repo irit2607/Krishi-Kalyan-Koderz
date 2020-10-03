@@ -17,7 +17,11 @@ Once this portal is linked to the government, then they can add/ remove, or make
 
 4)Contact form<br>
 Contact form is provided in the portal. If any user finds any sort of doubts they can fill up the contact form and can also give feedback, to record the experience of the users using this portal.
-<br><br></p>
+<br><br>
+
+
+--- We have taken around 12 schemes for this website. Further more schemes can be added easily and also form can be updated as per needs!<br><br>
+</p>
 
 
 
