@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="w3layouts_breadcrumbs_left">
+				<ul>
+					<li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>/</span></li>
+					<li><i class="fa fa-cogs" aria-hidden="true"></i>Schemes</li>
+				</ul>
+			</div>
+			<div class="w3layouts_breadcrumbs_right">
+				<h2>Schemes</h2>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //breadcrumbs -->
+<div class="welcome">
+	<div class="container">
+		<h3 class="agileits_w3layouts_head">{{scheme.name}}</h3>
+		<div class="w3_agile_image">
+			<img src="{{ url_for('static', filename='images/1.png') }}" alt=" " class="img-responsive" />
+		</div>
+		<br>
+		<div style="line-height: 1.8;">{{scheme.des}}</div>
+	</div>
+</div>
+
+ {% endblock %}

@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<!-- welcome -->
+	<div class="welcome">
+		<div class="container">
+			<h3 class="agileits_w3layouts_head">Welcome to our <span>Portal</span></h3>
+			<div class="w3_agile_image">
+				<img src="{{ url_for('static', filename='images/1.png') }}" alt=" " class="img-responsive" />
+			</div>
+			<p style="font-size: 18px" class="agile_para">Understanding the schemes implemented by the government is the right of every Farmer.</p>
+		</div>
+<!---728x90--->
+
+		<div class="mis-stage w3_agileits_welcome_grids"> 
+			<!-- The element to select and apply miSlider to - the class is optional -->
+			<ol class="mis-slider">
+				<li class="mis-slide"> 
+					<figure> 
+						<img src="{{ url_for('static', filename='images/2.png') }}" alt=" " class="img-responsive" />
+						<figcaption>Strawberry</figcaption>
+					</figure>
+				</li>
+				<li class="mis-slide"> 
+					<figure> 
+						<img src="{{ url_for('static', filename='images/3.png') }}" alt=" " class="img-responsive" />
+						<figcaption>Orange</figcaption>
+					</figure>
+				</li>
+				<li class="mis-slide"> 
+					<figure> 
+						<img src="{{ url_for('static', filename='images/4.png') }}" alt=" " class="img-responsive" />
+						<figcaption>Pomegranates</figcaption>
+					</figure>
+				</li>
+				<li class="mis-slide"> 
+					<figure> 
+						<img src="{{ url_for('static', filename='images/5.png') }}" alt=" " class="img-responsive" />
+						<figcaption>Lemon</figcaption>
+					</figure>
+				</li>
+				<li class="mis-slide"> 
+					<figure> 
+						<img src="{{ url_for('static', filename='images/7.png') }}" alt=" " class="img-responsive" />
+						<figcaption>Apple</figcaption>
+					</figure>
+				</li>
+				<li class="mis-slide"> 
+					<figure> 
+						<img src="{{ url_for('static', filename='images/6.png') }}"alt=" " class="img-responsive" />
+						<figcaption>Passion Fruit</figcaption>
+					</figure>
+				</li>
+			</ol>
+		</div>
+	</div>
+<!-- //welcome -->
+<!-- welcome-bottom -->
+	<div id="welcome_bottom" class="welcome-bottom">
+		<div class="col-md-6 wthree_welcome_bottom_left">
+			<h3>we work hard and make our country <span>greener</span></h3>
+			<p>These are some of the statistics of our country:</p>
+			<div class="col-md-6 wthree_welcome_bottom_left_grid">
+				<div class="w3l_social_icon_gridl">
+					<img src="{{ url_for('static', filename='images/8.png') }}" alt=" " class="img-responsive" />
+				</div>
+				<div class="w3l_social_icon_gridr">
+					<h4 class="counter">29%</h4>
+				</div>
+				<div class="clearfix"> </div>
+				<div class="w3l_social_icon_grid_pos">
+					<label>-</label>
+				</div>
+			</div>
+			<div class="col-md-6 wthree_welcome_bottom_left_grid">
+				<div class="w3l_social_icon_gridl">
+					<img src="{{ url_for('static', filename='images/9.png') }}"alt=" " class="img-responsive" />
+				</div>
+				<div class="w3l_social_icon_gridr">
+					<h4 class="counter">13%</h4>
+				</div>
+				<div class="clearfix"> </div>
+				<div class="w3l_social_icon_grid_pos">
+					<label>-</label>
+				</div>
+			</div>
+			<div class="col-md-6 wthree_welcome_bottom_left_grid">
+				<div class="w3l_social_icon_gridl">
+					<img src="{{ url_for('static', filename='images/10.png') }}"alt=" " class="img-responsive" />
+				</div>
+				<div class="w3l_social_icon_gridr">
+					<h4 class="counter">12.5%</h4>
+				</div>
+				<div class="clearfix"> </div>
+				<div class="w3l_social_icon_grid_pos">
+					<label>-</label>
+				</div>
+			</div>
+			<div class="col-md-6 wthree_welcome_bottom_left_grid">
+				<div class="w3l_social_icon_gridl">
+					<img src="{{ url_for('static', filename='images/11.png') }}" alt=" " class="img-responsive" />
+				</div>
+				<div class="w3l_social_icon_gridr">
+					<h4 class="counter">31.5%</h4>
+				</div>
+				<div class="clearfix"> </div>
+				<div class="w3l_social_icon_grid_pos">
+					<label>-</label>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-6 wthree_welcome_bottom_right">
+			<div class="agileinfo_grid">
+				<figure class="agileits_effect_moses">
+					<img src="{{ url_for('static', filename='images/4.png') }}" alt=" " class="img-responsive" />
+					<figcaption>
+						<h4>Plantation <span>For Future Growth</span></h4>
+						<p><b>Agriculture is not a job, it's all about passion and hardwork </b></p>
+					</figcaption>			
+				</figure>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //welcome-bottom -->
+
+  {% endblock %}

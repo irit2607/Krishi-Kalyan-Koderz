@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+{% block body %}
+<!---728x90--->
+
+
+<!-- breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="w3layouts_breadcrumbs_left">
+				<ul>
+					<li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>/</span></li>
+					<li><i class="fa fa-cogs" aria-hidden="true"></i>Schemes</li>
+				</ul>
+			</div>
+			<div class="w3layouts_breadcrumbs_right">
+				<h2>Schemes</h2>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //breadcrumbs -->
+<!---728x90--->
+
+<!-- services -->
+	<div class="welcome">
+		<div class="container">
+			<h3 class="agileits_w3layouts_head"><span>Government</span> Schemes</h3>
+			<div class="w3_agile_image">
+				<img src="{{ url_for('static', filename='images/1.png') }}" alt=" " class="img-responsive" />
+			</div>
+			{% for scheme in schemes %} 
+			<p class="agile_para"></p>
+			<a href="/scheme/{{scheme.slug}}"><div class="w3_agile_services_grids"> 
+				<div class="col-md-12 w3_agile_services_grid"> 
+					<div class="col-md-2 col-xs-4 w3_agile_services_grid_left"> 
+						<div class="agile_services_grid_left1 hvr-radial-out"> 
+							<img src="{{ url_for('static', filename='images/13.png') }}" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<div class="col-xs-8 w3_agile_services_grid_right"> 
+						<h4>{{scheme.name}}</h4>
+						<p>{{scheme.des[0:140]}}...   Read more</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div></a>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="clearfix">
+		    {% if number!=0 %}
+            <a class="btn btn-success btn-lg" style="float: left; margin-left: 3em" href="{{prev}}">&larr; Previous</a>
+            {% endif %}
+            <a class="btn btn-success btn-lg" style="float: right; margin-right: 3em" href="{{next}}">Next &rarr;</a>  
+    </div>
+    <br>
+    <br>
+<!-- //services -->
+<!---728x90--->
+
+<!-- flexSlider -->
+	<script defer src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+  </script>
+<!-- //flexSlider -->
+ {% endblock %}

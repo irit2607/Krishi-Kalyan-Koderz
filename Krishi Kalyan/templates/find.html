@@ -1,0 +1,248 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!-- breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="w3layouts_breadcrumbs_left">
+        <ul>
+          <li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>/</span></li>
+          <li><i class="fa fa-picture-o" aria-hidden="true"></i>Form</li>
+        </ul>
+      </div>
+      <div class="w3layouts_breadcrumbs_right">
+        <h2>Form</h2>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+<!-- //breadcrumbs -->
+<!---728x90--->
+
+<!-- gallery -->
+  <div class="welcome">
+    <div class="container">
+      <h3 class="agileits_w3layouts_head"><span>Know </span>Which Scheme is better for <span>You</span></h3>
+      
+      <p style="font-size: 18px" class="agile_para">Proper understanding of schemes is very essential!<br>Filling all the fields is compulsory!</p>
+<!---728x90--->
+    <br>
+    <br>
+
+   <form action={{url_for('result')}} method="post">
+
+  <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer01">First name</label>
+      <input type="text" class="form-control is-valid" name="fname" id="validationServer01" value="" required>
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+      
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault02">Last name</label>
+      <input type="text" class="form-control" name="lname" id="validationDefault02" value="" required>
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">City</label>
+      <input type="text" class="form-control" name="city" id="validationDefault03" required>
+
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+
+    </div>
+   
+    </div>
+    
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">State</label>
+      <input type="text" class="form-control" name="state" id="validationDefault03" required>
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+    </div>
+   </div>
+
+   <div class="form-row">
+     <div class="form-group col-md-4">
+      <label for="inputState">Gender</label>
+    <select id="inputState" name="gender" class="form-control" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Female</option><option>Male</option><option>Other</option>
+      </select>
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="form-row">
+    <div class="col-md-4 ">
+      <label for="validationDefault03">Age</label>
+      <input type="text" class="form-control" name="age" id="validationDefault03" required>
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+    </div>
+   </div>
+
+    <div class="form-row">
+     <div class="form-group col-md-4">
+      <label for="inputState">Category</label>
+      <select id="inputState" name="category" class="form-control" required>
+        <option selected disabled value="">Choose...</option>
+        <option>General</option><option>OBC</option><option>SC</option><option>ST</option><option>Other</option>
+
+      </select>
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+    </div>
+    </div>
+  
+
+    <div class="col">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault01">Schemes applied before(if any)</label>
+      <input type="text" class="form-control" name="applied" id="validationDefault01" value="" required>
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+    </div>
+
+    <div class="col">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault02">Land Size in Acre</label>
+      <select id="inputState" name="landsize" class="form-control" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Less than 2 acres</option><option>Less than 5 acres</option><option> 5 acres and more</option>
+      </select>
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="col">
+    <div class="col-md-6 mb-3">
+      <label for="inputsoil">Do you have crop insurance?</label>
+      <select id="inputState" name="cropins" class="form-control" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Yes</option><option>No</option>
+      </select>
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+
+    </div>
+    </div>
+
+
+
+     
+<div class="col">
+    <div class="col-md-6 mb-3">
+      <label for="inputsoil">Does your land get satisfied rain water?</label>
+      <select id="inputState" name="rw" class="form-control" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Yes</option><option>No</option>
+      </select>
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+    </div>
+
+<div class="col">
+    <div class="col-md-6 mb-3">
+      <label for="inputsoil">Do you possess kisaan credit card(KCC)?</label>
+      <select id="inputState" name="kcc" class="form-control" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Yes</option><option>No</option>
+      </select>
+
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+
+    </div>
+    </div>
+
+
+
+     
+<div class="col">
+    <div class="col-md-6 mb-3">
+      <label for="inputsoil">Do you know about your soil health?</label>
+      <select id="inputState" name="soilhealth" class="form-control" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Yes</option><option>No</option>
+      </select>
+      <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+ 
+   
+
+    </div>
+   
+
+
+    <div class="col">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault01">What type of farming are you doing?</label>
+      <select id="inputcrop" name="farming" class="form-control" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Organic farming</option><option>Dairy farming</option><option>Fishery</option>
+      </select>
+
+         <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+
+      </div>
+    </div>
+  <div class="col">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault01">Failue of crop due to</label>
+      <select id="inputcrop" name="failure" class="form-control" required>
+        <option selected disabled value="">Choose...</option>
+        <option>No failure of crops</option><option>Natural Calamities</option><option>Insects</option><option>Other reason</option>
+      </select>
+
+   <div class="valid-feedback">
+       <p style="color: rgb(255,255,255);">.</p>
+      </div>
+
+    <div class="col-auto my-1">
+      <input type="submit" class="btn btn-lg btn-success" placeholder="Submit">
+    </div>
+    </div>
+  </div>
+   </div>
+    </div>
+</div>
+</ul>
+</div>
+
+    </div>
+    
+   </div>
+
+ </div>
+
+  </form>
+   </div>
+  </div>
+
+  {% endblock %}
