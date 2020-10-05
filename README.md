@@ -32,7 +32,6 @@ Contact form is provided in the portal. If any user finds any sort of doubts the
 	<ul>
 		<li>HTML</li>
 		<li>CSS</li>
-		<li>jquery</li>
 		<li>JavaScript</li>
 	</ul>
 </p>
