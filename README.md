@@ -7,7 +7,7 @@
 Our portal will incorporate the following feature:<br><br>
 
 1)Our project is a Portal which has a list of the schemes concerning farmers. These schemes are laid down by the Indian government.
-It is useful for farmers since using this portal they can claim the benefits of the schemes. Even if they can't apply for certain schemes, they are aware of the schemes.<br>
+It is useful for farmers since using this portal they can claim the benefits of the schemes. Even if they can't apply for certain schemes, they are aware of the schemes.<br><br>
 
 2)Search form<br>
 A search form is also available on the portal to search for schemes that one can apply to and benefit from. One simply has to answer the given questions in the form and the scheme that suits them best will be shown. No login is required in this portal.<br><br>
