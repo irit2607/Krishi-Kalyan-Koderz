@@ -48,7 +48,7 @@ Contact form is provided in the portal. If any user finds any sort of doubts the
 	</ul>	
 </p>
 
-<p style="font-size: 18px;  margin-left: 1em;">Link of the portal: <a href="#"></a></p>
+<p style="font-size: 18px;  margin-left: 1em;">Link of the portal: <a href="http://kkkoderz.pythonanywhere.com/">Krishi Kalyan</a></p>
 
 <p style="font-size: 18px;  margin-left: 1em;">Team Leader: SANSKRITI KUSHIK<br>
 Team Members: IRIT KUSHWAHA & MUGDHA KORADE</p>
