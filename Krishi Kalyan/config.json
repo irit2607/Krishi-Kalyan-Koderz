@@ -1,9 +1,0 @@
-{
-  "params":
-  {
-    "local_server": "True",
-    "local_uri": "mysql+pymysql://root:@localhost/krishikalyan",
-    "prod_uri": "mysql+pymysql://root:@localhost/krishikalyan",
-    "no_of_schemes": 5
-  }
-}
